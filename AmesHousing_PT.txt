@@ -1,0 +1,573 @@
+NOME: AmesHousing.txt
+TIPO: População
+TAMANHO: 2930 observações, 82 variáveis
+TÍTULO DO ARTIGO: Ames Iowa: Alternativa ao Conjunto de Dados de Habitação de Boston
+
+RESUMO DESCRITIVO: O conjunto de dados contém informações do Ames Assessor’s Office usado no cálculo dos valores avaliados para propriedades residenciais individuais vendidas em Ames, IA de 2006 a 2010.
+
+FONTES:
+Ames, Gabinete do Assessor de Iowa
+
+DESCRIÇÕES VARIÁVEIS:
+Os caracteres de tabulação são usados ​​para separar variáveis ​​no arquivo de dados. Os dados têm 82 colunas que incluem 23 variáveis ​​nominais, 23 ordinais, 14 discretas e 20 contínuas (e 2 identificadores de observação adicionais).
+
+Ordem (Discreta): Número de observação
+
+PID (Nominal): Número de identificação do lote - pode ser usado com o site da cidade para revisão do lote.
+
+Subclasse MS (Nominal): Identifica o tipo de moradia envolvida na venda.
+
+       020 1-HISTÓRIA 1946 E TODOS OS ESTILOS MAIS RECENTES
+       030 1-STORY 1945 & OLDER
+       040 1-HISTÓRIA COM SÓTÃO ACABADO TODAS AS IDADES
+       045 1-1 / 2 HISTÓRIA - INACABADO TODAS AS IDADES
+       050 1-1 / 2 HISTÓRIA TERMINADA TODAS AS IDADES
+       060 2-HISTÓRIA 1946 e mais recente
+       070 2-HISTÓRIA 1945 E MAIS VELHO
+       075 2-1 / 2 HISTÓRIA PARA TODAS AS IDADES
+       080 DIVIDIDO OU MULTI-NÍVEL
+       085 SPLIT FOYER
+       090 DUPLEX - TODOS OS ESTILOS E IDADES
+       120 1-STORY PUD (Desenvolvimento de Unidade Planejada) - 1946 e MAIS NOVO
+       150 1-1 / 2 STORY PUD - TODAS AS IDADES
+       160 PUD DE 2 HISTÓRIAS - 1946 E MAIS NOVO
+       180 PUD - MULTILEVEL - INCL SPLIT LEV / FOYER
+       190 2 CONVERSÃO DE FAMÍLIA - TODOS OS ESTILOS E IDADES
+
+Zoneamento MS (Nominal): identifica a classificação geral de zoneamento da venda.
+
+       A Agricultura
+       C comercial
+       Residencial Vila Flutuante FV
+       I Industrial
+       RH Residencial de alta densidade
+       RL Residential Low Density
+       Parque Residencial de Baixa Densidade RP
+       Média densidade residencial RM
+
+Frente do lote (contínua): metros lineares da rua conectada à propriedade
+
+Área do lote (contínua): tamanho do lote em pés quadrados
+
+Rua (Nominal): Tipo de estrada de acesso à propriedade
+
+       Gravel Grvl
+       Pavimentado
+       
+Beco (Nominal): Tipo de beco de acesso à propriedade
+
+       Gravel Grvl
+       Pavimentado
+       NA Sem acesso ao beco
+
+Forma do lote (ordinal): forma geral da propriedade
+
+       Reg Regular
+       IR1 ligeiramente irregular
+       IR2 moderadamente irregular
+       IR3 Irregular
+       
+Contorno do terreno (nominal): planicidade da propriedade
+
+       Nível quase plano / nivelado
+       Bnk Banked - Aumento rápido e significativo de nível de rua para edifício
+       HLS Hillside - Declive significativo de lado a lado
+       Baixa Depressão
+
+Utilitários (Ordinal): Tipo de utilitários disponíveis
+
+       AllPub Todos os serviços públicos (E, G, W e S)
+       Eletricidade, gás e água NoSewr (fossa séptica)
+       Apenas eletricidade e gás NoSeWa
+       Eletricidade ELO apenas
+
+Configuração do lote (Nominal): configuração do lote
+
+       Dentro do lote
+       Corner Corner lot
+       CulDSac Cul-de-sac
+       FR2 Frontage em 2 lados da propriedade
+       FR3 Frontage em 3 lados da propriedade
+
+Declive do terreno (ordinal): declive da propriedade
+
+       Inclinação suave Gtl
+       Mod Moderate Slope
+       Sev Severe Slope
+
+Bairro (nominal): localizações físicas dentro dos limites da cidade de Ames (mapa disponível)
+
+       Blmngtn Bloomington Heights
+       Blueste Bluestem
+       BrDale Briardale
+       BrkSide Brookside
+       ClearCr Clear Creek
+       CollgCr College Creek
+       Crawfor Crawford
+       Edwards Edwards
+       Gilbert Gilbert
+       Verdes Verdes
+       GrnHill Green Hills
+       IDOTRR Iowa DOT e Rail Road
+       Landmrk Landmark
+       MeadowV Meadow Village
+       Mitchel Mitchell
+       Nomes North Ames
+       NoRidge Northridge
+       Villa NPkVill Northpark
+       NridgHt Northridge Heights
+       NWAmes Northwest Ames
+       OldTown Cidade Velha
+       SWISU South & West of Iowa State University
+       Sawyer Sawyer
+       SawyerW Sawyer West
+       Somerst Somerset
+       StoneBr Stone Brook
+       Timber Timberland
+       Veenker Veenker
+
+Condição 1 (Nominal): Proximidade a várias condições
+
+       Artéria Adjacente à rua arterial
+       Feedr Adjacente à rua alimentadora
+       Norm Normal
+       RRNn Dentro de 200 'da Ferrovia Norte-Sul
+       RRAn Adjacente à Ferrovia Norte-Sul
+       PosN Recurso externo quase positivo - parque, cinturão verde, etc.
+       PosA Adjacente ao recurso off-site positivo
+       RRNe a menos de 200 'da Ferrovia Leste-Oeste
+       RRAe Adjacente à Ferrovia Leste-Oeste
+
+Condição 2 (Nominal): Proximidade a várias condições (se mais de uma estiver presente)
+
+       Artéria Adjacente à rua arterial
+       Feedr Adjacente à rua alimentadora
+       Norm Normal
+       RRNn Dentro de 200 'da Ferrovia Norte-Sul
+       RRAn Adjacente à Ferrovia Norte-Sul
+       PosN Recurso externo quase positivo - parque, cinturão verde, etc.
+       PosA Adjacente ao recurso off-site positivo
+       RRNe a menos de 200 'da Ferrovia Leste-Oeste
+       RRAe Adjacente à Ferrovia Leste-Oeste
+
+Tipo de prédio (nominal): tipo de habitação
+
+       1Fam Unifamiliar independente
+       2FmCon Conversão de duas famílias; originalmente construído como residência unifamiliar
+       Duplx Duplex
+       Unidade final TwnhsE Townhouse
+       Unidade TwnhsI Townhouse Inside
+
+Estilo da Casa (Nominal): Estilo de moradia
+
+       1 História Uma história
+       1.5Fin One and one-half story: 2º nível terminado
+       1.5Unf Um andar e meio: 2º nível inacabado
+       2História Dois
+       2.5 Fin. Dois andares e meio: 2º nível concluído
+       2.5Unf Dois andares e meio: 2º nível inacabado
+       SFoyer Split Foyer
+       SLvl Split Level
+
+Qual geral (ordinal): avalia o material geral e o acabamento da casa
+
+       10 muito excelente
+       9 excelente
+       8 muito bom
+       7 bom
+       6 acima da média
+       5 média
+       4 abaixo da média
+       3 justo
+       2 pobres
+       1 muito ruim
+
+Cond. Geral (ordinal): avalia as condições gerais da casa
+
+       10 muito excelente
+       9 excelente
+       8 muito bom
+       7 bom
+       6 acima da média
+       5 média
+       4 abaixo da média
+       3 justo
+       2 pobres
+       1 muito ruim
+
+Ano de construção (discreto): Data de construção original
+
+Ano da Remodelação / Adicionar (Discreto): Data da Remodelação (igual à data de construção se não houver remodelação ou acréscimos)
+
+Estilo do telhado (nominal): Tipo de telhado
+
+       Flat Flat
+       Gable Gable
+       Gambrel Gabrel (celeiro)
+       Hip Hip
+       Mansard Mansard
+       Galpão Galpão
+
+Roof Matl (Nominal): Material do telhado
+
+       ClyTile Clay ou Tile
+       Telha Padrão CompShg (Composto)
+       Membran Membrane
+       Metal Metal
+       Roll Roll
+       Alcatrão e cascalho Grv e alcatrão
+       WdShake Wood Shakes
+       WdShngl Wood Shingles
+
+Exterior 1 (Nominal): Revestimento externo da casa
+
+       Telhas de Amianto AsbShng
+       AsphShn Asphalt Shingles
+       BrkComm Brick Common
+       BrkFace Brick Face
+       CBlock Bloco de Cinza
+       CemntBd Cement Board
+       HdBoard Hard Board
+       ImStucc Imitation Stucco
+       MetalSd Metal Siding
+       Outro Outro
+       Contraplacado de contraplacado
+       PreCast PreCast
+       Stone Stone
+       Stucco Stucco
+       VinylSd Vinyl Siding
+       Wd Sdng Wood Siding
+       WdShing Wood Shingles
+
+Exterior 2 (Nominal): Revestimento externo da casa (se houver mais de um material)
+
+       Telhas de Amianto AsbShng
+       AsphShn Asphalt Shingles
+       BrkComm Brick Common
+       BrkFace Brick Face
+       CBlock Bloco de Cinza
+       CemntBd Cement Board
+       HdBoard Hard Board
+       ImStucc Imitation Stucco
+       MetalSd Metal Siding
+       Outro Outro
+       Contraplacado de contraplacado
+       PreCast PreCast
+       Stone Stone
+       Stucco Stucco
+       VinylSd Vinyl Siding
+       Wd Sdng Wood Siding
+       WdShing Wood Shingles
+
+Tipo Mas Vnr (Nominal): Tipo de folheado de alvenaria
+
+       BrkCmn Brick Common
+       BrkFace Brick Face
+       CBlock Bloco de Cinza
+       Nenhum Nenhum
+       Stone Stone
+
+Área Mas Vnr (Contínua): Área folheada de alvenaria em pés quadrados
+
+Exter Qual (Ordinal): Avalia a qualidade do material no exterior
+
+       Ex Excelente
+       Deus bom
+       TA Média / Típica
+       Fa Fair
+       Pobre pobre
+
+Exter Cond (Ordinal): Avalia a condição atual do material no exterior
+
+       Ex Excelente
+       Deus bom
+       TA Média / Típica
+       Fa Fair
+       Pobre pobre
+
+Fundação (Nominal): Tipo de fundação
+
+       Tijolo e Azulejo BrkTil
+       CBlock Bloco de Cinza
+       PConc Poured Contrete
+       Laje Laje
+       Stone Stone
+       Madeira Madeira
+
+Bsmt Qual (Ordinal): Avalia a altura do porão
+
+       Ex excelente (mais de 100 polegadas)
+       Gd Good (90-99 polegadas)
+       TA Típico (80-89 polegadas)
+       Fa Fair (70-79 polegadas)
+       Fraco (<70 polegadas
+       NA Sem Porão
+
+Bsmt Cond (Ordinal): Avalia o estado geral do porão
+
+       Ex Excelente
+       Deus bom
+       TA Típico - leve umidade permitida
+       Fa Fair - umidade ou alguma rachadura ou sedimentação
+       Ruim - Grave rachadura, sedimentação ou umidade
+       NA Sem Porão
+
+Exposição de Bsmt (Ordinal): Refere-se a paralisação ou paredes no nível do jardim
+
+       Gd Good Exposure
+       Exposição média média (níveis de divisão ou foyers normalmente têm pontuação média ou superior)
+       Exposição Mn Mimimum
+       Sem Exposição
+       NA Sem Porão
+
+BsmtFin Tipo 1 (Ordinal): Classificação da área acabada do porão
+
+       GLQ Good Living Quarters
+       ALQ Habitação Média
+       BLQ abaixo da média de alojamentos
+       Rec Average Rec Room
+       LwQ de baixa qualidade
+       Unf Unfinshed
+       NA Sem Porão
+
+BsmtFin SF 1 (contínuo): pés quadrados acabados Tipo 1
+
+BsmtFinType 2 (Ordinal): Classificação da área acabada do porão (se houver vários tipos)
+
+       GLQ Good Living Quarters
+       ALQ Habitação Média
+       BLQ abaixo da média de alojamentos
+       Rec Average Rec Room
+       LwQ de baixa qualidade
+       Unf Unfinshed
+       NA Sem Porão
+
+BsmtFin SF 2 (Contínuo): pés quadrados acabados Tipo 2
+
+Bsmt Unf SF (Contínuo): pés quadrados inacabados de área de subsolo
+
+Total Bsmt SF (Contínuo): Total de pés quadrados de área do porão
+
+Aquecimento (Nominal): Tipo de aquecimento
+
+       Forno de piso
+       GasA Forno de ar quente forçado a gás
+       GasW Gás água quente ou calor de vapor
+       Forno de Gravidade
+       OthW Água quente ou calor de vapor diferente de gás
+       Fornalha de parede de parede
+
+AquecimentoQC (Ordinal): Qualidade e condição do aquecimento
+
+       Ex Excelente
+       Deus bom
+       TA Média / Típica
+       Fa Fair
+       Pobre pobre
+
+Ar Central (Nominal): Ar condicionado central
+
+       N Não
+       Sim sim
+
+Elétrica (Ordinal): Sistema elétrico
+
+       Disjuntores padrão SBrkr e Romex
+       FuseA Caixa de fusíveis acima de 60 AMP e toda a fiação Romex (média)
+       FuseF 60 AMP Fuse Box e principalmente fiação Romex (Fair)
+       Caixa de fusíveis FuseP 60 AMP e principalmente fiação de botão e tubo (ruim)
+       Mix Mixed
+
+1º Flr SF (Contínuo): pés quadrados do primeiro andar
+ 
+2º Flr SF (Contínuo): pés quadrados do segundo andar
+
+Low Qual Fin SF (contínuo): pés quadrados com acabamento de baixa qualidade (todos os andares)
+
+Área Gr Liv (Contínua): Área de estar acima do nível (solo) pés quadrados
+
+Banheiro completo Bsmt (discreto): banheiros completos no subsolo
+
+Semi-banheiro Bsmt (discreto): lavabos no subsolo
+
+Banho completo (discreto): banheiros completos acima do nível do solo
+
+Meio banho (discreto): meio banho acima do grau
+
+Quarto (discreto): quartos acima do nível (NÃO inclui quartos no subsolo)
+
+Cozinha (discreta): cozinhas acima do nível
+
+KitchenQual (Ordinal): Qualidade da cozinha
+
+       Ex Excelente
+       Deus bom
+       TA típica / média
+       Fa Fair
+       Pobre pobre
+       
+TotRmsAbvGrd (discreto): Total de quartos acima do nível (não inclui banheiros)
+
+Funcional (Ordinal): Funcionalidade inicial (suponha que seja típico, a menos que as deduções sejam garantidas)
+
+       Funcionalidade típica típica
+       Min1 Pequenas Deduções 1
+       Min2 Minor Deductions 2
+       Mod moderado deduções
+       Maj1 Principais Deduções 1
+       Maj2 Principais Deduções 2
+       Sev Severamente Danificado
+       Sal Salvage apenas
+
+Lareiras (Discretas): Número de lareiras
+
+FireplaceQu (Ordinal): Qualidade da lareira
+
+       Ex Excelente - Lareira de alvenaria excepcional
+       Gd Good - Lareira de alvenaria no nível principal
+       TA Médio - Lareira pré-fabricada na sala principal ou Lareira de alvenaria no porão
+       Fa Fair - Lareira pré-fabricada na cave
+       Pobres - Fogão Ben Franklin
+       NA Sem Lareira
+
+Tipo de garagem (nominal): localização da garagem
+
+       2 Tipos Mais de um tipo de garagem
+       Anexado à casa
+       Garagem do porão do porão
+       Embutido Embutido (parte da garagem da casa - normalmente tem um quarto acima da garagem)
+       CarPort Car Port
+       Separado de casa
+       NA Sem Garagem
+
+Garage Yr Blt (discreto): Ano em que a garagem foi construída
+
+Acabamento da garagem (ordinal): Acabamento interno da garagem
+
+       Terminado
+       RFn Bruto Terminado
+       Inacabado
+       NA Sem Garagem
+
+Carros de garagem (discretos): Tamanho da garagem em capacidade de carros
+
+Área da garagem (contínua): Tamanho da garagem em pés quadrados
+
+Garage Qual (Ordinal): Garage Quality
+
+       Ex Excelente
+       Deus bom
+       TA típica / média
+       Fa Fair
+       Pobre pobre
+       NA Sem Garagem
+
+Garagem Cond (Ordinal): condição da garagem
+
+       Ex Excelente
+       Deus bom
+       TA típica / média
+       Fa Fair
+       Pobre pobre
+       NA Sem Garagem
+
+Estrada pavimentada (Ordinal): entrada de automóveis pavimentada
+
+       Y Paved
+       Pavimento Parcial P
+       N Sujeira / Cascalho
+
+Deck de madeira SF (contínuo): área do deck de madeira em pés quadrados
+
+Open Porch SF (Contínuo): área de varanda aberta em pés quadrados
+
+Alpendre fechado (contínuo): área da varanda fechada em pés quadrados
+
+3-Ssn Porch (Contínuo): área de varanda de três estações em pés quadrados
+
+Tela da varanda (contínua): área da tela da varanda em pés quadrados
+
+Área da piscina (contínua): área da piscina em pés quadrados
+
+Pool QC (Ordinal): Qualidade da piscina
+
+       Ex Excelente
+       Deus bom
+       TA Média / Típica
+       Fa Fair
+       NA Sem piscina
+
+Cerca (Ordinal): Qualidade da cerca
+
+       GdPrv Good Privacy
+       Privacidade Mínima de MnPrv
+       GdWo Good Wood
+       MnWw Mínimo Madeira / Arame
+       NA sem cerca
+
+Característica diversa (nominal): Característica diversa não incluída em outras categorias
+
+       Elevador
+       Gar2 2ª garagem (se não descrito na seção de garagem)
+       Othr Outro
+       Galpão Galpão (mais de 100 SF)
+       Quadra de tênis TenC
+       NA Nenhum
+
+Val Diversos (Contínuo): $ Valor do recurso diverso
+
+Mo vendido (discreto): Mês vendido (MM)
+
+Ano vendido (discreto): ano vendido (AAAA)
+
+Tipo de venda (nominal): Tipo de venda
+
+       Documento de garantia WD - Convencional
+       Escritura de garantia CWD - Dinheiro
+       Escritura de Garantia VWD - Empréstimo VA
+       Nova casa recém-construída e vendida
+       Escritura / patrimônio do oficial de justiça COD
+       Termos regulares do contrato de 15% de adiantamento
+       Pagamento de entrada baixa do contrato ConLw e juros baixos
+       Juros baixos do contrato ConLI
+       Contrato ConLD Low Down
+       Oth Outro
+
+Condição de venda (nominal): condição de venda
+
+       Venda normal normal
+       Venda anormal anormal - comércio, execução hipotecária, venda a descoberto
+       AdjLand Adjoining Land Purchase
+       Alloca Allocation - duas propriedades vinculadas com escrituras separadas, normalmente em condomínio com garagem
+       Venda de família entre membros da família
+       A casa parcial não foi concluída na última avaliação (associada a novas casas)
+
+SalePrice (contínuo): preço de venda $$
+
+NOTAS ESPECIAIS:
+Existem 5 observações que um instrutor pode desejar remover do conjunto de dados antes de dá-lo aos alunos (um gráfico de PREÇO DE VENDA versus ÁREA GR LIV indicará rapidamente). Três deles são verdadeiros outliers (vendas parciais que provavelmente não representam os valores reais de mercado) e dois deles são simplesmente vendas incomuns (casas muito grandes com preços relativamente adequados). Eu recomendaria remover quaisquer casas com mais de 4000 pés quadrados do conjunto de dados (o que elimina essas 5 observações incomuns) antes de atribuí-lo aos alunos.
+
+HISTÓRIA POR TRÁS DOS DADOS:
+Esse conjunto de dados foi construído com a finalidade de um projeto de final de semestre para um curso de regressão de graduação. Os dados originais (obtidos diretamente do Ames Assessor’s Office) são usados ​​para fins de avaliação de impostos, mas se prestam diretamente à previsão dos preços de venda de casas. O tipo de informação contida nos dados é semelhante ao que um comprador residencial típico gostaria de saber antes de fazer uma compra e os alunos devem encontrar a maioria das variáveis ​​simples e compreensíveis.
+
+NOTAS PEDAGÓGICAS:
+Instrutores não familiarizados com regressão múltipla podem desejar usar este conjunto de dados em conjunto com um artigo JSE anterior que analisa a maioria dos principais problemas encontrados na modelagem de regressão:
+
+Kuiper, S. (2008), “Introdução à Regressão Múltipla: Quanto Vale o Seu Carro?”, Journal of Statistics Education Volume 16, Número 3 (2008).
+
+Fora dos problemas gerais associados à regressão múltipla discutida neste artigo, este conjunto de dados específico oferece várias oportunidades para discutir como o propósito de um modelo pode afetar o tipo de modelagem feita. O usuário desses dados também pode querer revisar outro artigo JSE relacionado diretamente aos preços de imóveis:
+
+Pardoe, I. (2008), “Modeling home prices using corretor data”, Journal of Statistics Education Volume 16, Number 2 (2008).
+
+Um problema é em relação à homocedasticidade e violações de suposição. O gráfico incluído no artigo parece indicar heterocedasticidade com variação aumentando com o preço de venda e este problema é evidente em muitos modelos simples de precificação de casas que se concentram apenas em tamanhos de casas e lotes. Embora essa violação possa ser atenuada pela transformação da variável de resposta (preço de venda), a equação resultante produz valores ajustados de difícil interpretação (preço de venda em log ou raiz quadrada em dólares). Esta situação dá ao instrutor a oportunidade de falar sobre os custos (estimadores enviesados, testes estatísticos incorretos, etc.) e benefícios (facilidade de uso) de não corrigir esta violação de suposição. Se o propósito da construção do modelo for simplesmente permitir que um comprador ou agente imobiliário típico se sente e estime o preço de venda de uma casa, tais transformações podem ser desnecessárias ou inadequadas para a tarefa em questão. Esse problema também pode abrir uma discussão sobre os contrastes e comparações entre mineração de dados, modelos preditivos e inferência estatística formal.
+
+Uma segunda questão intimamente relacionada ao uso pretendido do modelo é o tratamento de outliers e observações incomuns. Em geral, eu instruo meus alunos a nunca jogar fora pontos de dados simplesmente porque eles não correspondem às expectativas a priori (ou outros pontos de dados). Eu enfatizo fortemente este ponto na situação em que os dados estão sendo analisados ​​para fins de pesquisa que serão compartilhados com um público maior. Alternativamente, se o objetivo é mais uma vez criar um modelo de uso comum para estimar uma venda "típica", é do interesse do modelador remover quaisquer observações que não pareçam típicas (como execuções hipotecárias ou vendas familiares).
+
+REFERÊNCIAS:
+Casas individuais dentro do conjunto de dados podem ser referenciadas diretamente na página da Web do Ames City Assessor por meio do ID do lote (PID) encontrado no conjunto de dados. Observe que esses são valores nominais (não numéricos), portanto, os 0s anteriores devem ser incluídos no campo de entrada de dados no site. O acesso ao banco de dados pode ser obtido no site da Ames (http://www.cityofames.org/assessor/) clicando em “pesquisa de propriedade” ou acessando o Beacon (http://beacon.schneidercorp.com/Default. aspx) e inserir Iowa e Ames nos campos apropriados. Um mapa da cidade com a localização de todos os bairros também está disponível no site da Ames e pode ser acessado clicando em “Mapas” e depois em “Bairros de Avaliação Residencial (Apenas na Cidade de Ames)”.
+
+ENVIADO POR:
+Dean De Cock
+Truman State University
+100 E. Normal St., Kirksville, MO, 63501
+decock@truman.edu
